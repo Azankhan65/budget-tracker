@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121A2A;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #1E2A38;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.2em; /* Further reduced font for heading */
+    color: #fff;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Reduced gap between form elements */
+}
+
+input, select {
+    padding: 10px;
+    font-size: 1.1em; /* Further reduced input font size */
+    border-radius: 5px;
+    background-color: #2A3B4C;
+    color: #e0e0e0;
+    border: none;
+    transition: box-shadow 0.3s ease;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(100, 150, 255, 0.7);
+}
+
+button {
+    padding: 10px;
+    background-color: #3D72B1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em; /* Further reduced button font size */
+}
+
+button:hover {
+    background-color: #2C5A8C;
+}
+
+.balance {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5em; /* Further reduced balance font size */
+}
+
+.transactions {
+    margin-top: 20px;
+}
+
+.transactions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.transactions li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    font-size: 1em; /* Further reduced font size for transaction items */
+}
+
+.expense {
+    color: #FF5252;
+}
+
+.income {
+    color: #00E676;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #BBB;
+}
+
+#clear-transactions {
+    padding: 10px 20px;
+    background-color: #D32F2F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em; /* Further reduced clear button font size */
+}
+
+#clear-transactions:hover {
+    background-color: #f01924;
+}
+
+.remove-btn {
+    padding: 6px 12px;
+    background-color: #D32F2F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 1em; /* Further reduced remove button font size */
+}
+
+.remove-btn:hover {
+    background-color: #c21834;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 2em; /* Further reduced heading font for mobile */
+    }
+
+    .form input, .form select, .form button {
+        font-size: 1em; /* Further reduced font size for inputs and buttons on mobile */
+        padding: 9px;
+    }
+
+    .balance h2 {
+        font-size: 1.3em; /* Further reduced balance font for mobile */
+    }
+
+    .transactions li {
+        font-size: 1em; /* Further reduced font size for transaction items on mobile */
+        padding: 8px;
+    }
+
+    #clear-transactions {
+        padding: 9px 18px;
+    }
+
+    .remove-btn {
+        font-size: 0.9em;
+        padding: 5px 10px;
+    }
+}
